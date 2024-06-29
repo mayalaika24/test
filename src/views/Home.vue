@@ -12,9 +12,10 @@
       <span>Add</span>
       <img src="../assets/icons/add.svg" />
     </button>
-   <div class="cards-container d-flex align-items-center">
+   <div v-if="filteredData.length > 0" class="cards-container d-flex align-items-center">
       <MovieCard v-for="(movie, i) in filteredData" :movie="movie" @handle-delete="handleDelete" :index="i"/>
    </div>
+   <p class="text-center" v-else>No data available</p>
   </div>
 </template>
 
