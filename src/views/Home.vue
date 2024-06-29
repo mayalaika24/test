@@ -40,7 +40,7 @@ const handleClear = () => {
 const filterData = () => {
  filteredData.value = movies.value.filter(item => {
    return (
-     item.title.toLowerCase().includes(search.value) ||
+     item.title.toLowerCase().includes(search.value.toLowerCase()) ||
      Number(item.year) === Number(search.value) ||
      item.actors.length === Number(search.value)
    );
