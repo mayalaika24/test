@@ -1,6 +1,5 @@
 <template>
       <div class="page-layout">
-        <h1 class="page-title">{{ store.state.pageTitle }}</h1>
         <div class="content-container">
             <MovieForm @handle-submit="handleEditMovie" :movie="movie" />
         </div>

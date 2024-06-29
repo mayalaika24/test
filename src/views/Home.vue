@@ -1,21 +1,20 @@
 <template>
-  <div class="page-layout">
-    <div class="flex-center-between page-header">
-      <h1 class="page-title">{{ store.state.pageTitle }}</h1>
+  <div class="page-layout mt-3">
+    <div v-if="movies.length > 0" class="flex-center-between page-header">
       <div class="filter-container position-relative">
         <img class="input-icon search-icon" src="../assets/icons/search.svg" />
         <input placeholder="search by title, year or number of actors..." class="filter-input" type="text" v-model="search" @keyup.enter="filterData" />
         <img @click="handleClear" class="input-icon close-icon pointer" src="../assets/icons/close.svg" />
       </div> 
     </div>
-    <button @click="router.push('/add-movie')" class="button flex-center-between mb-3">
-      <span>Add</span>
-      <img src="../assets/icons/add.svg" />
-    </button>
    <div v-if="filteredData.length > 0" class="cards-container d-flex align-items-center">
       <MovieCard v-for="(movie, i) in filteredData" :movie="movie" @handle-delete="handleDelete" :index="i"/>
    </div>
    <p class="text-center" v-else>No data available</p>
+   <button @click="router.push('/add-movie')" class="button flex-center-between mt-3">
+      <span>Add</span>
+      <img src="../assets/icons/add.svg" />
+    </button>
   </div>
 </template>
 
@@ -61,6 +60,9 @@ const handleDelete = (val) => {
 .cards-container {
   flex-wrap: wrap;
   gap: 3rem;
+}
+.page-header {
+  flex-wrap: wrap;
 }
 .filter-container {
   width: 325px;

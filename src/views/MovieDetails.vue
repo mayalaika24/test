@@ -1,6 +1,5 @@
 <template>
     <div class="page-layout">
-        <h1 class="page-title">{{ store.state.pageTitle }}</h1>
         <div class="content-container">
             <div class="movie-details">
                 <span class="element-title">Title: </span>
