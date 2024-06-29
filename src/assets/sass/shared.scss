@@ -1,0 +1,124 @@
+@import './variables.scss';
+.route-layout {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    overflow-y: auto;
+}
+.content-container {
+    padding: 2rem;
+    width: 100%;
+    max-width: 750px;
+    margin: 1rem auto;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button {
+    cursor: pointer;
+}
+input::placeholder {
+    font-size: 12px;
+    opacity: 0.75;
+}
+.pointer {
+    cursor: pointer;
+}
+.page-header {
+    margin-bottom: 1rem;
+}
+.page-title,
+.dialog-title {
+    font-family: $font_semi_bold;
+    color: #383838;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.w-100 {
+    width: 100%;
+}
+.one-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.button {
+    height: 30px;
+    width: 125px;
+    color: $dark_gray;
+    padding: 0 6px;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button span {
+    font-family: $font_semi_bold;
+    font-size: 14px;
+}
+.button .submit-button {
+    color: #42c576;
+}
+label {
+    display: block;
+    background-color: #FFF;
+    position: relative;
+    z-index: 1;
+    margin: 0 12px -10px 12px;
+    width: max-content;
+    font-family: $font_semi_bold;
+    font-size: 14px;
+    color: $dark_gray;
+}
+.form-field {
+    width: 100%;
+}
+.field-container {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.form-field {
+    height: 35px;
+    border: 2px solid $dark_gray;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    font-size: 14px;
+}
+.form-field:focus {
+    outline: none;
+}
+.validation {
+    color: red;
+    position: absolute;
+    top: 100%;
+    font-size: 12px;
+    width: max-content;
+    left: calc(var(--bs-gutter-x)* .5);
+}
+.element-title,
+thead td {
+    color: #383838;
+    font-size: 16px;
+    font-family: $font_semi_bold;
+}
+.element-desc {
+    font-size: 14px;
+}
+.movie-details {
+    border-bottom: 1px solid rgba(55, 53, 58, .251);
+    padding: 0.85rem 0;
+    width: 100%;
+}
+.movie-details:first-child {
+    padding-top: 0;
+}
+.w-max-content {
+    width: max-content;
+}

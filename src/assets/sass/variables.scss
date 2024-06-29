@@ -1,0 +1,18 @@
+@font-face {
+    font-family: poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: poppins-semi-bold;
+    src: url('../fonts/Poppins-SemiBold.ttf');
+}
+$primary_color: #FFF;
+$gray_color: #F7F7F7;
+$dark_gray: #615E5E;
+$font_regular: poppins;
+$font_bold: poppins-bold;
+$font_semi_bold: poppins-semi-bold;
